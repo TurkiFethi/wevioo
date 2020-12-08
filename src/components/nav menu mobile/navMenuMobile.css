@@ -1,0 +1,57 @@
+
+.container-button-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 300%;
+    background: #fffdfd;
+    margin-top: 10px;
+}
+                    
+.container-item-menu-mobile{
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+.container-nav-Menu-mobile{
+    background-color: #CEC4C3;
+    padding: 17px;
+}
+.bars-mobile{
+    color: white;
+    font-size: 30px;
+}
+.logo-mobile{
+    font-weight: bold;
+    font-size: 15px;
+}
+.container-notification-mobile{
+    display: flex;
+}
+.btn-notification-nav-bar-mobile{
+    border-radius: 12px;
+    background-color: #EC1F28;
+    color: white;
+    border: transparent;
+    margin: 0px 0px -10px 9px;
+    position: relative;
+    height: 20px;
+    font-size: 10px;
+}
+.container-select-languages-mobile{
+    height: 33px;
+    background-color: #CEC4C3;
+    border: transparent;
+}
+.selected-menu-item-mobile{
+    background-color: #FEF4F4;
+    border-radius: 12px ;
+    border: transparent;
+}
+.container-icon-menu-mobile{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.change-color-icon-menu-mobile{
+    color: red;
+}

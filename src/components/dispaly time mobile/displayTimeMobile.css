@@ -1,0 +1,18 @@
+.container-display-time-mobile{
+    margin: 3px 5px 0px 5px;
+    background: #FCFCFC 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.container-text-display-time-mobile{
+    letter-spacing: 0px;
+    color: #0F0F0F;
+    opacity: 1;
+    font-size: 26px;
+    font-weight: bold;
+}
+.title-display-time-mobile{letter-spacing: 0px;
+color: #0F0F0F;
+opacity: 1;
+font-size: 26px;
+font-weight: bold;
+}
