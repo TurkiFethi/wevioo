@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './pagination.css'
 
 function Pagiantion({postsPerPage,totalPosts,paginate}) {
+    const [isSelected] = useState(false)
     const pageNumbers=[];
     for(let i=1;i<=Math.ceil(totalPosts/postsPerPage);i++){
-        pageNumbers.push(i)
+        pageNumbers.push({index:i,selected:isSelected})
     }
 
     return (
@@ -14,9 +15,10 @@ function Pagiantion({postsPerPage,totalPosts,paginate}) {
                 <button className="btn-previous"><span className="previous">{`<< Previous`}</span></button>
                 <div className="container-all-page">
                 {pageNumbers.map((number)=>(
-                    <div className={`${number?"change-container-nbre-page container_nbre-page":"container_nbre-page"}`}  key={number} >
-                        <a className="nbre-of-page" onClick={()=>paginate(number)} href='!#'>
-                            {number}
+                    <div  onClick={()=>paginate(number.index)} className="container_nbre-page"  key={number} >
+                        
+                        <a className="nbre-of-page" href='!#'>
+                            {number.index}
                         </a>
                     </div>
                 ))}

@@ -11,14 +11,13 @@ function AppLaptop({cart}) {
   const [posts, setPosts] = useState([])
   const [currentPage, setCurrentPage] = useState(1)
   const [postsPerPage] = useState(10)
-  const [isSelected, setisSelected] = useState(false)
   useEffect(() => {
     const fetchCart= async () => {
       setPosts(cart);
     }
     
     fetchCart();
-  }, [])
+  }, [cart])
 
   //Get current posts
   const indexOfLastPost=currentPage*postsPerPage

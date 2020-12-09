@@ -27,6 +27,7 @@ height: 53px;
     display: flex;
     align-items: center;
     justify-content: center;
+ 
 
 }
 .container-all-page{
@@ -40,6 +41,12 @@ height: 53px;
     text-decoration: none;
     height: 25px;
 }
-/* .change-container-nbre-page{
+.change-container-nbre-page{
     background-color: royalblue;
-} */
+}
+.border1{
+    border: solid yellow;
+}
+.background{
+    background-color: teal;
+}

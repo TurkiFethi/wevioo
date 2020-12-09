@@ -9,18 +9,13 @@ import {data} from './data'
 
 
 function App() {
-  const [cart, setCart] = useState(data)
-
+  const [cart] = useState(data)
+  const laptop=769
   const { width } = useWindowSize();
   return (
+    
 <div>
-{width<=768&&
-<AppMobile cart={cart}/>
-}
-{
-  width>768&&
-<AppLaptop cart={cart}/>
-}
+  {width<laptop?<AppMobile cart={cart}/>:<AppLaptop cart={cart}/>}
 </div>
    
   );

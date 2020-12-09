@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import './triStatisticalCart.css'
 
 function TriCartStatistical() {
-    const [selectedchoice, setSelectedchoice] = useState([
+    const [selectedchoice] = useState([
         {name:"Newest",code:"NEWEST"},
         {name: 'Like', code: 'LIKE'},
         {name: 'Comment', code: 'COMMENT'},

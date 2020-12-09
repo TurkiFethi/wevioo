@@ -4,7 +4,7 @@ import './socialMedia.css'
 
 function SocialMedia() {
     const { width } = useWindowSize();
-    const [socialMedia, setSocialMedia] = useState([
+    const [socialMedia] = useState([
         {
         
             background: "#F5F9F5",
@@ -40,8 +40,8 @@ function SocialMedia() {
     ])
     return (
         <div className={`${width>768?"p-grid mr container-social-media":"p-grid mr container-social-media-mobile"}`}>
-            {socialMedia.map((el, i) => (
-                <div className="p-col  container-button-social-media" style={{backgroundColor:`${el.background}`}} >
+            {socialMedia.map((el, index) => (
+                <div key={index} className="p-col  container-button-social-media" style={{backgroundColor:`${el.background}`}} >
                     <div className=" container-icon-social-media"style={{backgroundColor:`${el.backgroundIcon}`}}>
                         <i className={`${el.icon} icon-secial-media`}></i>
                     </div>

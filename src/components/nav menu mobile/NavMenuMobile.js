@@ -4,11 +4,10 @@ import 'primereact/resources/primereact.css';
 import 'primeflex/primeflex.css';
 import '../../index.css';
 import React, { useState } from 'react';
-import { Button } from 'primereact/button';
 import './navMenuMobile.css'
 
 function NavMenuMobile() {
-    const [valueSelect, setValueSelect] = useState([
+    const [valueSelect] = useState([
         { language: 'English', code: 'EN' },
         { language: 'French', code: 'FR' }
       ]);

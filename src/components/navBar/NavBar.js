@@ -12,7 +12,7 @@ import './navBar.css'
 function NavBar() {
 
   const [valueInput, setValueInput] = useState('');
-  const [valueSelect, setValueSelect] = useState([
+  const [valueSelect] = useState([
     { language: 'English', code: 'EN' },
     { language: 'French', code: 'FR' }
   ]);

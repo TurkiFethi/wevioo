@@ -5,7 +5,7 @@ import './statisticalCartMobile.css'
 import 'react-circular-progressbar/dist/styles.css';
 
 function StatisticalCartMobile({cartStatistical}) {
-    const [action, setaction] = useState([
+    const [action] = useState([
         {
             action: "action 1"
         },
@@ -32,8 +32,8 @@ function StatisticalCartMobile({cartStatistical}) {
  
                     <div className="p-col-12 mr ">
                        
-                        {cart.map((el, i) => (
-                             <ScrollPanel className="custombar2"id="p-scrollpanel-content">
+                        {cart.map((el, index) => (
+                             <ScrollPanel className="custombar2"id="p-scrollpanel-content" key={index}>
                     <div key={el.id} className="p-grid p-col-12 p-md-12 p-lg-12 mr container-cart  " id="container-cart-mobile" >
                         <div className=" p-col-4 p-md-4 p-lg-4  container-ref-title-cart">
                             <span className="ref-cart">{el.ref}</span>
@@ -80,7 +80,7 @@ function StatisticalCartMobile({cartStatistical}) {
                         <div className="p-col-2  icon-chart-percentage-cart" style={{marginLeft:"25px"}}>
                             <CircularProgressbar value={el.percentage} text={`${el.percentage}%`} style={{ stroke: "blue" }} />
                         </div>
-                        <div className="casc p-col  " key={i} onClick={() =>el.isSelected?closeSelectedStatisticCard(el.id): openSelectedStatisticCard(el.id)}>
+                        <div className="casc p-col  " key={index} onClick={() =>el.isSelected?closeSelectedStatisticCard(el.id): openSelectedStatisticCard(el.id)}>
                             <div>
                                 <i className="pi pi-ellipsis-v  p-col-3 p-md-3 p-lg-3  " style={{marginRight:"25px"}}></i>
                             </div>
